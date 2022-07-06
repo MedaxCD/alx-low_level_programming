@@ -1,19 +1,11 @@
 #include "main.h"
 
 /**
- * print_last_digit - function that prints the last digit of a number.
- * @x: The input number to check
- * Return: int.
- */
-
-int print_last_digit(int x)
+* _isalpha - checks for alphabetical letters
+* @c: a charter to be checke on
+* Return: returns 0 or 1 depending on condition
+*/
+int _isalpha(int c)
 {
-
-	x %= 10;
-
-	if (x < 0)
-		x *= -1;
-
-	_putchar(x + '0');
-	return (x);
+	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
 }
