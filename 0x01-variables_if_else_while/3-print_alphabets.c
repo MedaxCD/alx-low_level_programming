@@ -1,23 +1,25 @@
 #include <stdio.h>
 
 /**
- *  *main -> assign a random number to the variable n each time it is executed
- *   *and print the last digit of the number stored in the variable n
- *    *Return: Always 0 (Success)
- *     */
+ * main - program that prints the alphabet in lowercase, and then in uppercase,
+ * You can only use the putchar
+ * Return: 0
+ */
+
 int main(void)
 {
-	int ch;
-
-	for (ch = 97; ch <= 122; ch++)
-	{
-		putchar(ch);
-	}
-	for (ch = 65; ch <= 90; ch++)
-	{
-		putchar(ch);
-	}
-	putchar(10); /* this is an ascii code for new line*/
-
-	return (0);
+int lw = 'a';
+int up = 'A';
+while (lw <= 'z')
+{
+putchar(lw);
+lw += 1;
+}
+while (up <= 'Z')
+{
+putchar(up);
+up += 1;
+}
+putchar('\n');
+return (0);
 }
